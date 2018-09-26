@@ -149,6 +149,7 @@ a:hover {
     border: 1px solid #0b2d3d;
     background-color:#14597f;
     padding: 7px;
+    min-width: 80px;
 }
 .btn:hover{
     text-decoration:none !important;
@@ -258,6 +259,76 @@ a:hover {
 }
 
 
+/* Page de commande */
 
+#order-form{
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+#order-form label{
+    display: block;
+}
+#section-contact{
+    width: 90%;
+    grid-row: 1;
+    display: grid;
+    grid-gap: 7px;
+    grid-template-rows: 50% 50%;
+    grid-template-rows: auto auto auto;
+}
+#section-paiement{
+    width: 90%;
+    grid-row: 2;
+    display: grid;
+    grid-gap: 7px;
+    grid-template-rows: 50% 50%;
+    grid-template-rows: auto auto;
+}
+#order-form .btn{
+    grid-row: 3;
+    justify-self: end;
+    margin-right: 18%;
+    margin-top: 2%;
+}
+#contact{
+    grid-row: 1;
+    grid-column: 1;
+}
+#div-prenom{
+    grid-row: 2;
+    grid-column: 1;
+}
+#div-email{
+    grid-row: 3;
+    grid-column: 1;
+}
+#div-nom{
+    grid-row: 2;
+    grid-column: 2;
+}
+#paiement{
+    grid-row: 1;
+    grid-column: 1;
+}
+#div-phone{
+    grid-row: 3;
+    grid-column: 2;
+}
+#div-card{
+    grid-row: 2;
+    grid-column: 1;
+}
+#div-expiry{
+    grid-row: 2;
+    grid-column: 2;
+}
 
+#order-form input{
+    width: 80%
+}
 
+.form-control{ /* aussi pour la page produit */
+    border: 1px solid #999999;
+    border-radius: 4px;
+    min-height: 20px;
+}
