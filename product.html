@@ -12,8 +12,8 @@
       <div class="entete">
     	<div><a class="header-logo" href="./index.html"><img alt="logo" src="./assets/img/logo.svg" title="Accueil"></a></div>
 	<div class="header">
-	   <div class="header-items accueil active"><a href="./index.html">Accueil</a></div>
-	   <div class="header-items produits"><a href="./products.html">Produits</a></div>
+	   <div class="header-items accueil"><a href="./index.html">Accueil</a></div>
+	   <div class="header-items produits active"><a href="./products.html">Produits</a></div>
 	   <div class="header-items contact"><a href="./contact.html">Contact</a></div>
 	   <div class="header-items panier"><a class="shopping-cart" href="./shopping-cart.html" title="Panier">
 		<span class="fa-stack fa-lg">
@@ -26,35 +26,42 @@
       </div>
     </nav>
   </header>
-  <main>
-    <article class="main">
-      <h1>Manette Xbox 360</h1>
-      <img alt="Manette Xbox 360" src="./assets/img/xbox-controller.png">
-      <section>
-        <h2>Description</h2>
-        <p>Manette pouvant être branchée à une console Xbox 360 et un PC. Cette manette vous permettra de jouer à vos jeux vidéo préférés. 
-		De plus, cette manette est sans fil et comporte un port pour casque d'écoute.</p>
-      </section>
-      <section>
-        <h2>Caractéristiques</h2>
-        <ul>
-          <li>Manette sans fil 2.4GHz avec adapteur USB</li>
-          <li>Compacte et ergonomique</li>
-          <li>Port pour casque d'écoute pour Xbox Live</li>
-        </ul>
-      </section>
-      <form>
-        <label for="product-quantity">Quantité:</label>
-        <input type="number" value="1" min="1" id="product-quantity">
-        <button title="Ajouter au panier" type="submit">
-          Ajouter
-        </button>
-      </form>
-      <p>Prix: <strong>29,99&thinsp;$</strong></p>
+  <main class="main">
+    <article>
+		<h1>Manette Xbox 360</h1>
+		<div class="product-item">
+			<div class="product-image">
+				<img alt="Manette Xbox 360" src="./assets/img/xbox-controller.png">
+			</div>
+			<div class="product-description">
+			  <section>
+				<h2>Description</h2>
+				<p>Manette pouvant être branchée à une console Xbox 360 et un PC. Cette manette vous permettra de jouer à vos jeux vidéo préférés. 
+				De plus, cette manette est sans fil et comporte un port pour casque d'écoute.</p>
+			  </section>
+			  <section>
+				<h2>Caractéristiques</h2>
+				<ul>
+				  <li>Manette sans fil 2.4GHz avec adapteur USB</li>
+				  <li>Compacte et ergonomique</li>
+				  <li>Port pour casque d'écoute pour Xbox Live</li>
+				</ul>
+			  </section>
+			  <div id="form">
+				  <form class="product-form">
+					<label for="product-quantity">Quantité:</label>
+					<input class="form-control product-input" type="number" value="1" min="1" id="product-quantity">
+					<button class="btn" title="Ajouter au panier" type="submit">
+					  Ajouter
+					</button>
+				  </form>
+				<p>Prix: <strong>29,99&thinsp;$</strong></p>
+			  </div>
+			</div>
     </article>
   </main>
   <footer>
-    <p>Par Antoine Béland et Konstantinos Lambrou-Latreille</p>
+    <p>Par Bastien Dubourg et Patrick Nadeau</p>
   </footer>
 </body>
 </html>

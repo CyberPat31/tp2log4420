@@ -12,7 +12,7 @@
       <div class="entete">
     	<div><a class="header-logo" href="./index.html"><img alt="logo" src="./assets/img/logo.svg" title="Accueil"></a></div>
 	<div class="header">
-	   <div class="header-items accueil active"><a href="./index.html">Accueil</a></div>
+	   <div class="header-items accueil"><a href="./index.html">Accueil</a></div>
 	   <div class="header-items produits"><a href="./products.html">Produits</a></div>
 	   <div class="header-items contact"><a href="./contact.html">Contact</a></div>
 	   <div class="header-items panier"><a class="shopping-cart" href="./shopping-cart.html" title="Panier">
@@ -26,10 +26,10 @@
       </div>
     </nav>
   </header>
-  <main>
+  <main class="main">
     <article>
       <h1>Panier</h1>
-      <table>
+      <table class="shopping-table">
         <thead>
           <tr>
             <th></th>
@@ -41,35 +41,35 @@
         </thead>
         <tbody>
           <tr>
-            <td><button>X</button></td>
+            <td class="deleteButtonColumn"><button class="shoppingButton"><i class="fa fa-times"></i></button></td>
             <td><a href="./product.html">Console Wii</a></td>
             <td>199,99&thinsp;$</td>
-            <td><button>-</button> 1 <button>+</button></td>
+            <td><button class="shoppingButton"><i class="fa fa-minus"></i></button> 1 <button class="shoppingButton"><i class="fa fa-plus"></i></button></td>
             <td>199,99&thinsp;$</td>
           </tr>
           <tr>
-            <td><button>X</button></td>
+            <td class="deleteButtonColumn"><button class="shoppingButton"><i class="fa fa-times"></i></button></td>
             <td><a href="./product.html">Manette Xbox 360</a></td>
             <td>29,99&thinsp;$</td>
-            <td><button>-</button> 2 <button>+</button></td>
+            <td><button class="shoppingButton"><i class="fa fa-minus"></i></button> 2 <button class="shoppingButton"><i class="fa fa-plus"></i></button></td>
             <td>59,98&thinsp;$</td>
           </tr>
           <tr>
-            <td><button>X</button></td>
+            <td class="deleteButtonColumn"><button class="shoppingButton"><i class="fa fa-times"></i></button></td>
             <td><a href="./product.html">Moniteur 19"</a></td>
             <td>149,99&thinsp;$</td>
-            <td><button>-</button> 3 <button>+</button></td>
+            <td><button class="shoppingButton"><i class="fa fa-minus"></i></button> 3 <button class="shoppingButton"><i class="fa fa-plus"></i></button></td>
             <td>449,97&thinsp;$</td>
           </tr>
         </tbody>
       </table>
-      <p>Total: <strong>704,94&thinsp;$</strong></p>
-      <button>Vider le panier</button>
-      <a href="./order.html">Commander</a>
+      <p class="priceTotal">Total: <strong>704,94&thinsp;$</strong></p>
+	  <a class="btn commanderButton" href="./order.html">Commander <i class="fa fa-angle-double-right"></i></a>
+      <button class="btn"><i class="fa fa-trash-o"></i>&nbsp; Vider le panier</button>
     </article>
   </main>
   <footer>
-    <p>Par Antoine Béland et Konstantinos Lambrou-Latreille</p>
+    <p>Par Bastien Dubourg et Patrick Nadeau</p>
   </footer>
 </body>
 </html>

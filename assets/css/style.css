@@ -123,6 +123,122 @@ a:hover {
     padding: 10px 10px 10px 10px;
 }
 
+/* page de contacts */
+
+.contact-page {
+  text-align: center;
+  padding: 20px 0;
+  margin: 40px 0 0 0;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  display: grid;
+}
+
+.contact-courriel {
+	grid-column: 3;
+	align-self: center;
+}
+
+.contact-adresse {
+	grid-column: 2;
+	align-self: center;
+}
+
+.contact-telephone {
+	grid-column: 1;
+	align-self: center;
+}
+
+/* page de produit */
+
+.product-item {
+	display: grid;
+}
+
+.product-image {
+	grid-column: 1;
+	padding: 0 10px;
+	justify-self: right;
+	align-self: center;
+}
+
+.product-description {
+	grid-column: 2;
+	padding: 0 10px;
+	justify-self: right;
+	align-self: center;
+}
+
+.product-form {
+	float: right;
+}
+
+.product-input {
+	width: 60px;
+}
+
+.form-control {
+	padding: 9px;
+	border: 1px solid #999999;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+#form  {
+	border-top: 1px dotted #cccccc;
+	padding-top: 10px;
+}
+
+/* page du panier d'achat */
+
+.shopping-table {
+	width: 100%;
+    border-collapse: collapse;
+}
+
+.shopping-table thead {
+	border-bottom: 1px solid black;
+}
+
+.shopping-table tbody {
+	border-bottom: 1px solid black;
+}
+
+.shopping-table tr {
+	text-align: left;
+	height: 35px;
+}
+
+.deleteButtonColumn {
+	max-width: 30px;
+}
+
+.shoppingButton {
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	border: 0px;
+	background-color: #dddddd;
+}
+
+.shoppingButton:hover {
+	background-color: #bbbbbb;
+}
+
+.shopping-table th:last-child,
+.shopping-table td:last-child {
+  text-align: right;
+}
+
+.priceTotal {
+  padding-right: 10px;
+  margin-bottom: 25px;
+  text-align: right;
+}
+
+.commanderButton {
+	float: right;
+}
 
 /* page d'accueil*/
 
@@ -140,7 +256,8 @@ a:hover {
     justify-self: end;
     align-self: start;
     max-width: 450px;
-    min-height: 330px;
+    min-height: 320px;
+	padding-top: 1px;
 }
 .btn{
     text-decoration:none;
